@@ -3,9 +3,9 @@ Configuration for the Raspberry Pi Vending Machine App.
 Update these values to match your setup.
 """
 
-# ─── Django Server Configuration ─────────────────────────────
-# Change this to the IP address of the machine running the Django server
-SERVER_URL = "http://192.168.1.100:8000"
+# ─── Firebase Configuration ─────────────────────────────
+# Path to your Firebase service account key JSON file
+FIREBASE_CREDENTIALS_PATH = "serviceAccountKey.json"
 
 # ─── Weight Sensor Configuration ─────────────────────────────
 # HX711 GPIO pins (BCM numbering)

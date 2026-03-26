@@ -1,0 +1,21 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow anyone to read data from the web dashboard
+    match /users/{userId} {
+      allow read: if true;
+      
+      match /transactions/{transactionId} {
+        allow read: if true;
+      }
+    }
+    
+    // Cloud Admin SDK (Raspberry Pi) bypasses these rules.
+    // In a production environment with Client SDK writes, 
+    // you would add write validation here.
+    match /{document=**} {
+      allow write: if false;
+    }
+  }
+}

@@ -503,7 +503,7 @@ class VendingMachineApp:
 def main():
     print("=" * 50)
     print("  EcoBottle Reverse Vending Machine")
-    print(f"  Server: {config.SERVER_URL}")
+    print("  Connection: Direct Firebase Firestore")
     print(f"  Mock weight: {config.MOCK_WEIGHT_SENSOR}")
     print(f"  Camera: {config.CAMERA_INDEX}")
     print("=" * 50)
