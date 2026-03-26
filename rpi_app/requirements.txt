@@ -1,0 +1,8 @@
+# Core dependencies (install on both Pi and dev machine)
+opencv-python>=4.5
+Pillow>=9.0
+requests>=2.28
+
+# Raspberry Pi specific (install only on Pi)
+# RPi.GPIO>=0.7
+# hx711>=1.1
